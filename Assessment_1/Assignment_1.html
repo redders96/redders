@@ -6,27 +6,42 @@
 
             function llama(){ //Setting up llama function
                 var llamadisplayField = document.getElementById("display"); // Capturing data in text field
-                llamadisplayField.value = "The Llama Button is clicked"; // Updating data in text field
+                llamadisplayField.value = "User clicks Llama"; // Updating data in text field
+
+                var displaySpan = document.getElementById("display_2") // Capturing data in Span field
+                displaySpan.innerHTML = "Llama is clicked" // Updating data in span tag
+
                 var img_display = document.getElementById("img_display") // Capturing the image element
                 img_display.src = "llama.jpg" // Showing Llama picture
+
                 var link = "https://www.istockphoto.com/photo/alpaca-gm1201041782-344264507"; //setting up variable to link for photo source
                 document.getElementById("source_link").href = link; //directing source link hyperlink to photo source set above
             }
 
             function donkey(){ //Setting up donkey function
                 var donkeydisplayField = document.getElementById("display"); // Capturing data in text field
-                donkeydisplayField.value = "The Donkey Button is clicked"; // Updating data in text field
+                donkeydisplayField.value = "User clicks Donkey"; // Updating data in text field
+
+                var displaySpan = document.getElementById("display_2") // Capturing data in Span field
+                displaySpan.innerHTML = "Donkey is clicked" // Updating data in span tag
+
                 var img_display = document.getElementById("img_display") // Capturing the image element
                 img_display.src = "donkey.jpg" // Showing Donkey picture
+
                 var link = "https://www.pinterest.com.au/pin/686658274411956104/"; //setting up variable to link for photo source
                 document.getElementById("source_link").href = link; //directing source link hyperlink to photo source set above
             }
 
             function tapier(){ //Setting up tapier function
                 var tapierdisplayField = document.getElementById("display"); // Capturing data in text field
-                tapierdisplayField.value = "The Tapier Button is clicked"; // Updating data in text field
+                tapierdisplayField.value = "User clicks Tapier"; // Updating data in text field
+
+                var displaySpan = document.getElementById("display_2") // Capturing data in Span field
+                displaySpan.innerHTML = "Tapier is clicked" // Updating data in span tag
+
                 var img_display = document.getElementById("img_display") // Capturing the image element
                 img_display.src = "tapier.jpg" // Showing Tapier picture
+
                 var link = "https://pixers.net.au/wall-murals/malayan-tapir-also-called-asian-tapir-tapirus-indicus-34254666"; //setting up variable to link for photo source
                 document.getElementById("source_link").href = link; //directing source link hyperlink to photo source set above
             }
@@ -241,6 +256,10 @@
         <br> 
         <br>
         <input type="text" id="display" style="width:173px"></input> <!-- Creating text field -->
+        <br>
+        <br>
+        <span id="display_2"></span>
+        <br>
         <br>
         <image width = "300" height = "250" id="img_display"></image> <!-- Creating image field - set paramaters for field so images are displayed as same size -->
         <br>
