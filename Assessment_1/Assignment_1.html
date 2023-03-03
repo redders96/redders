@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //Javascript for Task 4
+
+            function llama(){ //Setting up llama function
+                var llamadisplayField = document.getElementById("display"); // Capturing data in text field
+                llamadisplayField.value = "The Llama Button is clicked"; // Updating data in text field
+                var img_display = document.getElementById("img_display") // Capturing the image element
+                img_display.src = "llama.jpg" // Showing Llama picture
+                var link = "https://www.istockphoto.com/photo/alpaca-gm1201041782-344264507"; //setting up variable to link for photo source
+                document.getElementById("source_link").href = link; //directing source link hyperlink to photo source set above
+            }
+
+            function donkey(){ //Setting up donkey function
+                var donkeydisplayField = document.getElementById("display"); // Capturing data in text field
+                donkeydisplayField.value = "The Donkey Button is clicked"; // Updating data in text field
+                var img_display = document.getElementById("img_display") // Capturing the image element
+                img_display.src = "donkey.jpg" // Showing Donkey picture
+                var link = "https://www.pinterest.com.au/pin/686658274411956104/"; //setting up variable to link for photo source
+                document.getElementById("source_link").href = link; //directing source link hyperlink to photo source set above
+            }
+
+            function tapier(){ //Setting up tapier function
+                var tapierdisplayField = document.getElementById("display"); // Capturing data in text field
+                tapierdisplayField.value = "The Tapier Button is clicked"; // Updating data in text field
+                var img_display = document.getElementById("img_display") // Capturing the image element
+                img_display.src = "tapier.jpg" // Showing Tapier picture
+                var link = "https://pixers.net.au/wall-murals/malayan-tapir-also-called-asian-tapir-tapirus-indicus-34254666"; //setting up variable to link for photo source
+                document.getElementById("source_link").href = link; //directing source link hyperlink to photo source set above
+            }
+
+
+        </script>
+
+        <style> 
+        th{
+            text-align: left;
+        }
+        td{
+            text-align: left;
+        }
+        
+
+        </style>
+
+    </head>
+    <body>
+        <!-- Begin Task 1  -->
+    <h2>Task 1: Use CSS to display the following information</h2>
+
+        <table style="background-color: darkcyan; border-width: 2px; border-style: solid; border-color: grey;"> <!-- Putting headings in table so I can set dark cyan background around the whole thing and don't have white gaps between-->
+            <tr>
+                <th align = "left" style="background-color: aquamarine;"><h2 style="color: crimson;">5115206: Cameron Redman</h2></th>
+            </tr>
+            <tr>
+                <th align = "left" style="background-color: cornflowerblue;" ><h3 style="font-family: Arial, Helvetica, sans-serif; color: rgb(148, 83, 4);">COMP804: Web Security</h3></th>
+            </tr>
+            <tr>
+                <th align="left" style = "background-color: rgb(255, 126, 255)"><h4 style="font-family: Arial, Helvetica, sans-serif;">Assignment 1, Monday 6 March 2023</h4></th>
+            </tr>
+        </table>
+
+        <!-- Begin Task 2  -->
+        <h2>Task 2: Use CSS to style a table</h2>
+
+        <table border="1" 
+        style="border-collapse: collapse;
+        border-width: 2px;
+        border-style: dashed;
+        border-color: black;
+        background-color: aquamarine;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: darkslategrey;"">
+            <tr style="background-color: rgb(38, 92, 74);font-weight: bold; text-decoration: underline; color: whitesmoke;">
+                <th width="300px"><u>Activity</u></th>
+                <th width="200px"><u>Date</u></th>
+            </tr>
+            <tr style="background-color: aquamarine;">
+                <td>First day to enrol for re-enrolling (continuing students)</td>
+                <td><i>22 Nov 2021</i></td>
+            </tr>
+            <tr style="background-color:rgb(110, 219, 183);">
+                <td>Orientation</td>
+                <td>
+                    <i>22 Feb - 24 Feb 2022</i>
+                    <br>
+                    <br>
+                    Further information is available on Get Started
+                </td>
+            </tr>
+            <tr style="background-color: aquamarine;">
+                <td>Lectures Commence (weeks 1-7)</td>
+                <td>28 Feb - 15 Apr 2022</td>
+            </tr>
+            <tr style="background-color:rgb(110, 219, 183);">
+                <td>Last day to enrol / add subjects yourself</td>
+                <td><i>11 Mar 2022</i></td>
+            </tr>
+            <tr style="background-color: aquamarine;">
+                <td>Last day to enrol / add subjects with Head of Students approval</td>
+                <td><i>18 Mar 2022</i></td>
+            </tr>
+        </table>
+
+        <!-- Begin Task 3  -->
+        <h2>Task 3: HTML & CSS</h2>
+
+        <table border="1" 
+        width:fit-content;
+        style="border-collapse: collapse;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        background-color: rgb(195, 195, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: darkslategrey;">
+        <tr style="background-color: rgb(137, 137, 253);">
+            <th width="200px">Name</th>
+            <th width="300px">Health benefit</th>
+        </tr>
+        <tr>
+            <td>
+                <u>Apples:</u>
+                <img width="200px" src="Apple.jpg">
+            </td>
+            <td style="font-size: 90%;">Contains calcium for healthy bones and teeth, iron to help transport oxygen in the body and zinc for the immune system.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.aussieapples.com.au/health/#:~:text=Essential%20Minerals%3A%20Apples%20also%20contain,can%20be%20found%20in%20apples.">Aussie Apples: Health</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Bananas:</u>
+                <img width="200px" src="Banana.jpg">
+            </td>
+            <td style="font-size: 90%;">A medium banana provides almost 9% of a person’s daily potassium needs, according to the nutritional information from the above sources.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.medicalnewstoday.com/articles/271157#benefits">Medical News Today: Benefits and health risks of bananas</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Cherries:</u>
+                <img width="200px" src="cherries.jpg">
+            </td>
+            <td style="font-size: 90%;">Cherries contain plant compounds called anthocyanins and cyanidin which may have anti-inflammatory effects.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.bbcgoodfood.com/howto/guide/health-benefits-cherries">BBC Good Food: Top 5 health benefits of cherries</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Dates:</u>
+                <img width="200px" src="dates.jpg">
+            </td>
+            <td style="font-size: 90%;">Dates are a source of bone-friendly minerals including phosphorus, potassium, calcium and magnesium. They are also a source of vitamin K which is needed for healthy, strong bones.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.bbcgoodfood.com/howto/guide/health-benefits-dates">BBC Good Food: Top 5 health benefits of dates</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Eggplant:</u>
+                <img width="200px" src="eggplant.jpg">
+            </td>
+            <td style="font-size: 90%;">Eggplants are a nutrient-dense food, meaning they contain a good amount of vitamins, minerals and fiber in few calories.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.healthline.com/nutrition/eggplant-benefits">Healthline: 7 Surprising Health Benefits of Eggplants</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Figs:</u>
+                <img width="200px" src="fig.jpg">
+            </td>
+            <td style="font-size: 90%;">Figs are often recommended to nourish and tone the intestines, they act as a natural laxative because of their high fibre content.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.bbcgoodfood.com/howto/guide/health-benefits-figs">BBC Good Food: Top 5 health benefits of figs</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Grapefruit:</u>
+                <img width="200px" src="grapefruit.jpg">
+            </td>
+            <td style="font-size: 90%;">Grapefruits are a good source of beta-carotene, which is converted in the body to vitamin A, and is thought to reduce the risk of chronic conditions including macular degeneration.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.bbcgoodfood.com/howto/guide/health-benefits-grapefruit">BBC Good Food: Top 5 health benefits of grapefruit</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Honeydew Melon:</u>
+                <img width="200px" src="honeydew.jpg">
+            </td>
+            <td style="font-size: 90%;">Honeydew Melon contains several nutrients that are vital for repairing and maintaining strong bones, including folate, vitamin K and magnesium.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.healthline.com/nutrition/honeydew#TOC_TITLE_HDR_3">Healthline: 10 Surprising Benefits of Honeydew Melon</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Jackfruit:</u>
+                <img width="200px" src="jackfruit.jpg">
+            </td>
+            <td style="font-size: 90%;">Jackfruit has a relatively low calorie count while, according to at least one study is richer in micronutrients than many other popular fruits such as apples, apricots, avocado and banana.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.bbcgoodfood.com/howto/guide/top-5-health-benefits-of-jackfruit">BBC Good Food: Top 5 health benefits of jackfruit</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <u>Kiwi Fruit:</u>
+                <img width="200px" src="kiwi.jpg">
+            </td>
+            <td style="font-size: 90%;">Kiwi fruit is well-known for its high vitamin C content – this and the other antioxidant nutrients it supplies appears to help alleviate some of the symptoms of asthma.
+                <br>
+                <br>
+                <a style="font-size: 80%" href="https://www.bbcgoodfood.com/howto/guide/health-benefits-kiwi-fruit">BBC Good Food: Top 5 health benefits of kiwi fruit</a>
+            </td>
+        </tr>
+        </table>
+
+        <!-- Begin Task 4  -->
+        <h2>Task 4: Javascript with button</h2>
+
+        <button onclick="llama()"> Llama </button> <!-- Calling on llama function on button click -->
+        <button onclick="donkey()"> Donkey </button> <!-- Calling on donkey function on button click -->
+        <button onclick="tapier()"> Tapier </button> <!-- Calling on Tapier function on button click -->
+        <br> 
+        <br>
+        <input type="text" id="display" style="width:173px"></input> <!-- Creating text field -->
+        <br>
+        <image width = "300" height = "250" id="img_display"></image> <!-- Creating image field - set paramaters for field so images are displayed as same size -->
+        <br>
+        <a href="#" id="source_link">Image Source Link</a>
+
+    </body>
+</html>
